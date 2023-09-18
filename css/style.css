@@ -46,11 +46,33 @@ body {
 }
 
 .box .cube {
+    background: url(../images/image-equilibrium.jpg) center center no-repeat;
+    background-size: cover;
     width: 330px;
     height: 330px;
     border-radius: 15px;
     margin-bottom: 23px;
+    position: relative;
 }
+
+.box .cube::before {
+    content: '';
+    background: url(../images/icon-view.svg)center center no-repeat;
+    background-color: var(--cyan);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .8s;
+    
+}
+
+
+.box .cube:hover::before {
+    opacity: .5; /* amount of opacity to blend the two images */
+  }
 
 .box h1 {
     font-size: 21px;
