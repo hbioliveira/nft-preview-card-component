@@ -56,7 +56,14 @@ body {
     font-size: 21px;
     margin-bottom: 23px;
     font-weight: 600;
+    transition: .7s;
+    cursor: pointer;
 }
+
+.box h1:hover {
+    color: var(--cyan);
+}
+
 
 .box p {
     font-size: 18px;
@@ -119,6 +126,12 @@ body {
 .created-by h3 span {
     color: var(--white);
     font-size: 15px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.created-by h3 span:hover {
+    color: var(--cyan);
 }
 
 .attribution {
