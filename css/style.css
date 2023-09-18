@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+/* ---------- Primary ----------  */
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/* ---------- Neutral ----------  */
+--very-dark-blue-main-BG-: hsl(217, 54%, 11%);
+--very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+}
+
+.container {
+    background-color: var(--very-dark-blue-main-BG-);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    background-color: var(--very-dark-blue-card-BG);
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 10px 10px 51px  hsl(215, 80%, 8%);
+}
+
+.box .cube {
+    width: 330px;
+    height: 330px;
+    border-radius: 15px;
+    margin-bottom: 23px;
+}
+
+.box h1 {
+    font-size: 21px;
+    margin-bottom: 23px;
+    font-weight: 600;
+}
+
+.box p {
+    font-size: 18px;
+    color: var(--soft-blue);
+    margin-bottom: 23px;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eth h3 {
+    color: var(--cyan);
+    font-size: 15px;
+}
+
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.counter h3 {
+    color: var(--soft-blue);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.created-by {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid var(--very-dark-blue-line);
+    padding-top: 20px;
+    text-align: left;
+}
+
+.created-by img {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.created-by h3 {
+    color: var(--soft-blue);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.created-by h3 span {
+    color: var(--white);
+    font-size: 15px;
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     margin-top: 20px;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 375px) {
+     
+    .box {
+        width: auto;
+        height: auto;
+    }
+
+    .box .cube {
+        width: 280px;
+        height: 280px;
+        border-radius: 15px;
+    }
+}
