@@ -53,7 +53,7 @@ body {
     border-radius: 15px;
     margin-bottom: 23px;
     position: relative;
-    cursor: pointer;
+    cursor: p;
 }
 
 .box .cube::before {
@@ -67,6 +67,7 @@ body {
     left: 0;
     opacity: 0;
     transition: opacity .8s;
+    border-radius: 15px;
     
 }
 
